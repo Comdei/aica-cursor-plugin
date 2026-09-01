@@ -1,0 +1,14 @@
+{
+  "name": "aica",
+  "displayName": "AICA — Comdei Life OS",
+  "description": "Comdei Life OS / AICA hosted MCP. Read your day, tasks, moments and Life Score; propose writes that you confirm in AICA (confirm-first). Connects with OAuth — no token to paste.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Comdei"
+  },
+  "homepage": "https://aica.guru",
+  "repository": "https://github.com/Comdei/aica-cursor-plugin",
+  "keywords": ["aica", "comdei", "life-os", "mcp", "productivity", "agenda", "tasks"],
+  "logo": "./assets/logo.png",
+  "mcpServers": "./mcp.json"
+}
