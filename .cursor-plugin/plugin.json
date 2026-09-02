@@ -17,5 +17,6 @@
     "tasks"
   ],
   "logo": "./assets/logo.png",
-  "mcpServers": "./mcp.json"
+  "mcpServers": "./mcp.json",
+  "license": "MIT"
 }
