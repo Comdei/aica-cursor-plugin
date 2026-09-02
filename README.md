@@ -1,6 +1,6 @@
 # aica — Comdei Life OS plugin for Cursor / Grok Bot
 
-The hosted **AICA Life OS MCP** as a one-click plugin. Public name: **Comdei**.
+The hosted **AICA Life OS MCP** as a one-click plugin.
 Product: [aica.guru](https://aica.guru).
 
 ```
@@ -41,7 +41,7 @@ AICA client.
 ```
 .cursor-plugin/plugin.json   manifest (name `aica`, keywords aica/comdei/…)
 mcp.json                     one remote server: https://aica.guru/life/mcp
-assets/logo.png              official Comdei mark (lowercase comdei, cruz/vine in the d)
+assets/logo.png              official AICA mark (white: rings, serif A, vine, “Aica”)
 ```
 
 Source of the MCP server: private `Comdei/aica`, `tools/aica-mcp`. Spec:
