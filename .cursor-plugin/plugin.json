@@ -1,0 +1,22 @@
+{
+  "name": "aica",
+  "displayName": "AICA Life OS",
+  "description": "AICA hosted MCP. Read your day, tasks, moments and Life Score; propose writes that you confirm in AICA (confirm-first). Connects with OAuth \u2014 no token to paste.",
+  "version": "0.1.0",
+  "author": {
+    "name": "AICA"
+  },
+  "homepage": "https://aica.guru",
+  "repository": "https://github.com/Comdei/aica-cursor-plugin",
+  "keywords": [
+    "aica",
+    "life-os",
+    "mcp",
+    "productivity",
+    "agenda",
+    "tasks"
+  ],
+  "logo": "./assets/logo.png",
+  "mcpServers": "./mcp.json",
+  "license": "MIT"
+}
