@@ -41,7 +41,7 @@ AICA client.
 ```
 .cursor-plugin/plugin.json   manifest (name `aica`, keywords aica/comdei/…)
 mcp.json                     one remote server: https://aica.guru/life/mcp
-assets/logo.png              official AICA mark (white: rings, serif A, vine, “Aica”)
+assets/logo.png              official Comdei mark (lowercase comdei, cruz/vine in the d)
 ```
 
 Source of the MCP server: private `Comdei/aica`, `tools/aica-mcp`. Spec:
