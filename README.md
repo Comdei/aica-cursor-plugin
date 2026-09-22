@@ -5,7 +5,7 @@ tasks, moments and Life Score, and proposes changes that you confirm in AICA.
 One URL, OAuth sign-in, nothing to paste.
 Product: [aica.guru](https://aica.guru).
 
-```
+```text
 MCP URL   https://aica.guru/life/mcp
 Auth      OAuth 2.1 (Authorization Code + PKCE, dynamic client registration)
 License   MIT
@@ -20,9 +20,12 @@ Two ways. Both end on the same OAuth screen.
 browser page opens, you confirm your AICA e-mail, click the link in your
 inbox, tap **Autorizar**, and you are connected.
 
-**From any MCP client or AI harness** — paste this prompt:
+**From an OAuth-capable MCP client** — paste this prompt:
 
-```
+The client must support Streamable HTTP, OAuth discovery, PKCE, and browser
+redirects. Clients without those capabilities cannot connect to this server.
+
+```text
 Connect the AICA Life OS MCP server.
 
 URL: https://aica.guru/life/mcp
@@ -44,15 +47,15 @@ by hand the wrong way; stop and let the OAuth flow run.
 AICA signs you in with a magic link (no password). Open that e-mail **on the
 same computer** where your client is running — the link returns the
 authorization to the app on that machine. Once connected, the client
-refreshes its own credential; you will not be asked again until you
-disconnect.
+refreshes its own credential when possible. If the credential expires, is
+revoked, or cannot be refreshed, repeat the OAuth flow.
 
 ## 2. After Autorizar: first sync
 
 Nothing is written to AICA on its own. Paste this to make the assistant look
 at what it can reach and propose what belongs in your Life OS:
 
-```
+```text
 You are connected to AICA Life OS. Scan the calendar, files and task lists
 you can reach from here. For each item decide whether it belongs in AICA
 (a commitment, a task, a moment worth keeping, a notice). Propose each one
@@ -68,7 +71,7 @@ Same rules as every other AICA client: the assistant proposes, you accept.
 
 Add the MCP server by hand:
 
-```
+```text
 URL     https://aica.guru/life/mcp
 Auth    leave blank (no token, no header, no key)
 ```
@@ -83,7 +86,7 @@ there will not work.
 Add a standing instruction in your harness (Cursor rules, a Claude Code
 scheduled routine, a Manus scheduled task, …). Example:
 
-```
+```text
 Every morning: call get_today and list_tasks on AICA Life OS and summarize
 my day in five lines. If anything on my calendar, in my files or in my
 tasks is missing from AICA, propose it with propose_* and remind me to
@@ -102,7 +105,7 @@ Reads: `get_today`, `list_tasks`, `search_moments`, `get_life_score`,
 
 ## Bundle
 
-```
+```text
 .cursor-plugin/plugin.json   manifest (name `aica`, displayName `AICA Life OS`, MIT)
 mcp.json                     one remote server: https://aica.guru/life/mcp
 assets/logo.png              official AICA mark (white: rings, serif A, vine, “Aica”)
