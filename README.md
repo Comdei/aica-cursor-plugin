@@ -3,10 +3,10 @@
 **AICA Life OS** as a hosted MCP server: your AI assistant reads your day,
 tasks, moments and Life Score, and proposes changes that you confirm in AICA.
 One URL, OAuth sign-in, nothing to paste.
-Product: [aica.guru](https://aica.guru).
+Product: [trilha.comdei.org](https://trilha.comdei.org).
 
 ```
-MCP URL   https://aica.guru/life/mcp
+MCP URL   https://trilha.comdei.org/life/mcp
 Auth      OAuth 2.1 (Authorization Code + PKCE, dynamic client registration)
 License   MIT
 ```
@@ -25,7 +25,7 @@ inbox, tap **Autorizar**, and you are connected.
 ```
 Connect the AICA Life OS MCP server.
 
-URL: https://aica.guru/life/mcp
+URL: https://trilha.comdei.org/life/mcp
 Transport: Streamable HTTP (remote server).
 Auth: OAuth. The server advertises it; discover it dynamically.
 Leave every auth field blank: no header, no token, no API key, no env var.
@@ -60,7 +60,7 @@ with the propose_* tools, one proposal per item, with a short reason.
 Do not invent items. When done, list what you proposed.
 ```
 
-Then open [aica.guru](https://aica.guru), go to the chat session
+Then open [trilha.comdei.org](https://trilha.comdei.org), go to the chat session
 *Propostas MCP* and tap **Aceitar** on each proposal you want (or dismiss it).
 Same rules as every other AICA client: the assistant proposes, you accept.
 
@@ -69,7 +69,7 @@ Same rules as every other AICA client: the assistant proposes, you accept.
 Add the MCP server by hand:
 
 ```
-URL     https://aica.guru/life/mcp
+URL     https://trilha.comdei.org/life/mcp
 Auth    leave blank (no token, no header, no key)
 ```
 
@@ -104,7 +104,7 @@ Reads: `get_today`, `list_tasks`, `search_moments`, `get_life_score`,
 
 ```
 .cursor-plugin/plugin.json   manifest (name `aica`, displayName `AICA Life OS`, MIT)
-mcp.json                     one remote server: https://aica.guru/life/mcp
+mcp.json                     one remote server: https://trilha.comdei.org/life/mcp
 assets/logo.png              official AICA mark (white: rings, serif A, vine, “Aica”)
 LICENSE                      MIT
 ```
